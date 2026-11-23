@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7ef">
+<meta name="description" content="Стартова сума 600 ₴, розрахунок сценарію на 6 000 ₴ та статус умов бонусу для перших 20 учасників.">
+<title>Чесний старт — внесок і умови</title>
+<style>
+:root{color-scheme:light;--paper:#faf7ef;--ink:#211c18;--red:#942725;--line:#d9cbbc;--soft:#f1e8db}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+.wrap{width:min(100% - 2.5rem,68rem);margin-inline:auto}
+header .wrap,footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1rem}
+header{border-bottom:1px solid var(--line)}
+.brand{font-weight:850;color:var(--ink);text-decoration:none}
+a{color:var(--red);text-underline-offset:.25em}
+a:focus-visible,summary:focus-visible{outline:3px solid #174c9e;outline-offset:4px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:clamp(2rem,6vw,6rem);padding-block:clamp(2.75rem,8vw,7rem)}
+h1,h2,.amount{font-family:Georgia,serif;line-height:1.04;margin:0;text-wrap:balance}
+h1{font-size:clamp(3rem,8vw,6.5rem);letter-spacing:-.065em}
+h2{font-size:clamp(2rem,5vw,3.6rem);letter-spacing:-.045em}
+strong.accent{color:var(--red);white-space:nowrap}
+.hero p{max-width:35ch;font-size:1.125rem;margin-block:1.4rem}
+.button{display:inline-flex;min-height:3rem;align-items:center;justify-content:center;padding:.75rem 1.25rem;background:var(--red);color:white;text-decoration:none;font-weight:750;border-radius:.35rem}
+.button:hover{background:#75201e}
+.tile{background:var(--red);color:#fff8ed;padding:1.5rem;border-radius:.5rem;overflow:hidden}
+.pattern{height:10rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23ffd8b5' d='M32 0l8 8-8 8-8-8zm0 48 8 8-8 8-8-8zM0 32l8-8 8 8-8 8zm48 0 8-8 8 8-8 8zM32 17l15 15-15 15-15-15zm0 8-7 7 7 7 7-7z' fill-rule='evenodd'/%3E%3C/svg%3E");background-size:4rem;mask-image:linear-gradient(black 65%,transparent)}
+.amount{display:block;font-size:clamp(2.75rem,7vw,5rem);margin-top:1rem}
+.tile p{margin:.6rem 0 0}
+section.conditions{padding-block:clamp(2.5rem,7vw,5rem);background:var(--soft)}
+.conditions h2{max-width:17ch}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-block:2rem}
+article{background:var(--paper);padding:1.35rem;border-radius:.4rem;border:1px solid var(--line)}
+article h3{margin:0;font-size:1.35rem}
+article p:last-child{margin-bottom:0}
+.faq{padding-block:clamp(2.5rem,7vw,5rem)}
+.faq h2{margin-bottom:1.5rem}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{padding-block:1rem;cursor:pointer;font-weight:750}
+details p{max-width:65ch;margin-top:0}
+footer{border-top:1px solid var(--line)}
+@media(max-width:44rem){.hero,.cards{grid-template-columns:1fr}.hero{gap:1.8rem}.pattern{height:6rem}.button{width:100%}}
+
+:root{--paper:#fff8e5;--ink:#101f37;--red:#153a89;--line:#d9d2bd;--soft:#f3edda;--gold:#ffdc5a}
+body{background:var(--paper)}
+header{background:var(--paper)}
+.brand::before{content:"";display:inline-block;width:.7rem;height:.7rem;margin-right:.6rem;background:#c73530;transform:rotate(45deg)}
+.hero-shell{background:radial-gradient(ellipse at 90% 10%,#2b59ab 0%,transparent 55%),#0e2458;color:#fff9e8;overflow:hidden}
+.hero{grid-template-columns:1.12fr .88fr}
+.hero .hero-title{font-size:clamp(3.25rem,8vw,6.8rem)}
+.hero strong.accent{color:var(--gold)}
+.hero p{max-width:42ch;color:#e3e9fa}
+.button{background:var(--gold);color:#172647;border-radius:.65rem;box-shadow:0 4px 0 #c19c25}
+.button:hover{background:#ffe680}
+.tile{position:relative;background:#ffdf68;color:#182544;border-radius:1.25rem;padding:clamp(1.25rem,3vw,2.4rem);box-shadow:0 18px 40px #08182d70}
+.tile .pattern{opacity:.88;filter:brightness(.55) saturate(7);mask-image:linear-gradient(black 42%,transparent);height:clamp(4.5rem,12vw,9rem)}
+.tile p{color:#283653;font-size:1rem;margin:.65rem 0 0}
+.tile .tile-label{margin-top:.5rem;font-size:.9rem;font-weight:750}
+.tile .amount{margin-top:.25rem}
+.facts{display:flex;gap:.65rem 1rem;flex-wrap:wrap;margin-top:1.4rem}
+.facts a{color:#fff5d2;font-weight:650;padding-block:.4rem}
+.conditions h2{max-width:none}
+.cards{gap:1.25rem}
+article{padding:clamp(1.3rem,3vw,2rem);border-radius:1rem;background:#fffdf7}
+article.bonus{background:#fcebac;border-color:#e1c35b}
+.equation{display:block;font-size:clamp(1.25rem,4vw,1.75rem);font-weight:850;color:#123374;margin:.65rem 0}
+summary{color:#173a7f}
+.mobile-action{display:none}
+@media(max-width:44rem){
+  .hero,.cards{grid-template-columns:1fr}
+  .hero{padding-block:2.5rem;gap:1.7rem}
+  .hero .hero-title{font-size:clamp(2.8rem,10vw,4.4rem)}
+  .mobile-action{display:block;position:fixed;z-index:2;inset:auto 0 0;padding:.65rem 1.25rem calc(.85rem + env(safe-area-inset-bottom));background:#0e2458;border-top:1px solid #43618f}
+  footer{padding-bottom:calc(5rem + env(safe-area-inset-bottom))}
+  #umovy,#bonus{scroll-margin-top:1rem}
+}
+#calc-title{font-size:clamp(1.8rem,4vw,2.65rem)}
+#scenario{display:grid;gap:.65rem;margin-top:1rem}
+#scenario label{font-weight:750}
+#scenario input,#scenario button{font:inherit;font-weight:750;min-height:3rem;border-radius:.55rem}
+#scenario input{width:100%;padding:.55rem .75rem;border:1px solid #a08025;background:#fffdf7;color:var(--ink)}
+#scenario button{background:#102b63;color:white;border:0;box-shadow:none;cursor:pointer}
+#scenario button:hover{background:#193f88}
+#scenario :focus-visible{outline:3px solid #102b63;outline-offset:3px}
+#result:not(:empty){padding:.8rem;background:#fff5c8;border-radius:.55rem;font-weight:750}
+.tile .pattern{height:2rem}
+.callout{padding-block:clamp(2.5rem,7vw,5rem);background:#ffdf68;color:#10234a}
+.callout h1{max-width:17ch;font-size:clamp(2.75rem,7vw,5.4rem)}
+.callout h1 span{display:block}
+.callout h1{margin-bottom:1.25rem}
+.callout .button{background:#102b63;color:white;box-shadow:none}
+.callout .button:hover{background:#193f88}
+</style>
+</head>
+<body id="top">
+<header><div class="wrap"><a class="brand" href="#top">Чесний старт</a><nav aria-label="Навігація"><a href="#umovy">Умови</a></nav></div></header>
+<main>
+<section class="callout" aria-labelledby="callout-title"><div class="wrap">
+  <h1 id="callout-title"><span>Досить мучитися!</span> Час із 600 зробити котлету в рази більшу!</h1>
+  <a class="button" href="#rozrakhunok">Розрахувати сценарій</a>
+</div></section>
+<div class="hero-shell"><div class="wrap hero">
+  <div>
+    <h2 class="hero-title">Що потрібно, щоб зростити <strong class="accent">600 ₴?</strong></h2>
+    <p>Оберіть цільову суму та подивіться, який приріст потрібен до врахування комісій і податків.</p>
+    <div class="facts"><a href="#bonus">Умови бонусу для перших 20 учасників</a></div>
+  </div>
+  <aside class="tile" id="rozrakhunok" aria-labelledby="calc-title">
+    <div class="pattern" aria-hidden="true"></div>
+    <h2 id="calc-title">Розрахуйте сценарій</h2>
+    <form id="scenario">
+      <label for="target">Цільова сума, ₴</label>
+      <input id="target" name="target" type="number" inputmode="numeric" min="600" max="1000000000" step="1" required value="6000">
+      <button class="button" type="submit">Порахувати приріст</button>
+      <output id="result" for="target" aria-live="polite"></output>
+    </form>
+    <p>Розрахунок показує потрібний приріст. Фактична дохідність невідома, можлива втрата внеску.</p>
+  </aside>
+</div></div>
+<section class="conditions" id="umovy" aria-labelledby="umovy-title"><div class="wrap">
+  <h2 id="umovy-title">Внесок, розрахунок і бонус</h2>
+  <div class="cards">
+    <article><h3>Що показує розрахунок</h3><strong class="equation">600 ₴ + 5 400 ₴ = 6 000 ₴</strong><p>5 400 ₴ — потрібний приріст до врахування комісій і податків. Можлива втрата внеску.</p></article>
+    <article class="bonus" id="bonus"><h3>Бонус для перших 20</h3><strong class="equation">600 ₴ внеску + 600 ₴ бонусу</strong><p>Такою може бути акція для перших 20 учасників, які внесуть депозит. Правила, строки й умови виведення ще потребують підтвердження.</p></article>
+  </div>
+</div></section>
+<section class="wrap faq" aria-labelledby="faq-title">
+  <h2 id="faq-title">Поширені запитання</h2>
+  <details><summary>Скільки часу потрібно, щоб отримати 6 000 ₴?</summary><p>Строк і ймовірність такого результату невідомі. Сума 6 000 ₴ наведена для розрахунку.</p></details>
+  <details><summary>Чи можна вивести бонус?</summary><p>Правила нарахування та виведення бонусу ще потребують підтвердження.</p></details>
+</section>
+</main>
+<footer><div class="wrap"><span>Чесний старт</span><a href="#top">До початку</a></div></footer>
+<div class="mobile-action"><a class="button" href="#rozrakhunok">Розрахувати сценарій</a></div>
+<script>
+const scenario = document.querySelector('#scenario');
+const target = document.querySelector('#target');
+const result = document.querySelector('#result');
+const number = new Intl.NumberFormat('uk-UA', { maximumFractionDigits: 1 });
+
+scenario.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const increase = target.valueAsNumber - 600;
+  result.textContent = `Потрібний приріст — ${number.format(increase)} ₴ (${number.format(increase / 6)}%).`;
+});
+
+target.addEventListener('input', () => {
+  result.textContent = '';
+});
+</script>
+</body>
+</html>
